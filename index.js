@@ -120,14 +120,14 @@ connectDB()
 //******************* Chain Search Query Helpers to Narrow Search Results**********************************
 
 // const chainSearch = async () => {
-//   const pr = await person
+//   const Pr = await person
 //     .find({ favoriteFoods: { $in: ['Burritos'] } })
-//     .sort({ name: 1 })
+//     .sort({ name: 'asc' })
 //     .limit(2)
-//     .select({ age: false })
+//     .select('-age')
 //     .exec()
 //     .then((res) => console.log('Burritos lovers:', res))
-//     .catch((err) => console.log('Error', err))
+//     .catch((err) => console.log('Error:', err))
 // }
 // chainSearch()
 
